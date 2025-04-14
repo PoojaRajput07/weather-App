@@ -50,9 +50,9 @@ const weatherToday=async()=>{
         const formattedData=formatter.format(dt);
         time_date.innerHTML=formattedData;
         typeofweather.innerHTML=data.weather[0].main;
-        temp.innerHTML=`${main.temp}&#176C`;
+        temp.innerHTML=`${main.temp}&#176`;
         min_max.innerHTML=`Min ${main.temp_min} , Max${main.temp_max}`
-        temperature.innerHTML=`<i class="fa-solid fa-temperature-three-quarters"></i> temperature ${main.temp} &#176C`;
+        temperature.innerHTML=`<i class="fa-solid fa-temperature-three-quarters"></i> temperature ${main.temp} &#176`;
         humidity.innerHTML=` <i class="fa-solid fa-droplet"></i> humidity ${main.humidity}`;
         pressure.innerHTML=`<i class="fa-solid fa-compress"></i> pressure ${main.pressure}`;
         windblow.innerHTML=` <i class="fa-solid fa-wind"></i> wind ${wind.speed}`;
