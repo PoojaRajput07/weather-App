@@ -12,11 +12,12 @@ body{
     margin:0px;
 }
 .container{
-    height:600px;
+    height:550px;
     width:600px;
     background-color: white;
     border-radius: 10px;
     display: flex;
+   
     flex-direction: column;
     gap:10px;
 
@@ -46,7 +47,7 @@ body{
     align-items: center;
     position:relative;
     top: 10px;
-    left:150px;
+    left:130px;
     /* border:5px black solid; */
     
 }
@@ -100,5 +101,104 @@ body{
 .date-time{
     margin:0px;
     font-weight: normal;
+}
+
+@media(max-width:768px){
+    body{
+       
+        
+        width:100%;
+        height: 100vh;
+        /* background-color:yellow; */
+    }
+    .container{
+        margin:15px;
+        width:600px;
+        height:500px;
+        /* background-color: brown; */
+       
+
+    }
+    .info{
+        width: 345px;
+        position:relative;
+        top: 10px;
+        left:100px;
+       
+    }
+    .h3{
+        font-size:19px;
+    }
+    .box{
+        font-size: 12px;
+    }
+    
+
+
+}
+
+@media(max-width:425px){
+    body{
+       
+        
+        width:100%;
+        height: 100vh;
+        /* background-color:yellow; */
+    }
+    .container{
+        margin:15px;
+        width:600px;
+        height:500px;
+        /* background-color: brown; */
+       
+
+    }
+    .info{
+        width: 345px;
+        position:relative;
+        top: 10px;
+        left:3px;
+       
+    }
+    .h3{
+        font-size:19px;
+    }
+    .box{
+        font-size: 12px;
+    }
+    
+
+
+}
+@media(max-width:320px){
+    body{
+        width:100%;
+        height:600px;;
+    }
+    .container{
+        left:30px;
+        width:300px;
+        height:600px;
+        /* margin:10px; */
+
+    }
+    .info{
+        width:250px;
+        position:relative;
+        top: 10px;
+        left:10px;
+        font-size:20px;
+       
+    }
+   
+    .date-time{
+        font-size:19px;
+    }
+    .box{
+        font-size: 11px;
+    }
+    .detail{
+        width:290px;
+    }
 }
 
